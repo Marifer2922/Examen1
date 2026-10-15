@@ -29,6 +29,46 @@
         <section id="Calculadora">
             <h2>Calculadora de Pedidos</h2>
             <p>Simule el presupuesto de un lote de mobiliario institucional.</p>
+            <form action="https://calculadoradepedidos.hn/api/cotización" method="POST" enctype="multipart/form-data">
+                <p>
+                    <label for="cantidad">Cantidad de Piezas a Cotizar:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" placeholder="Ej: 15">
+                </p>
+
+                <p>
+                    <label for="mueble">Tipo de Mueble:</label>
+                    <select id="mueble" name="mueble">
+                        <option value="">Seleccione un mueble</option>
+                        <option value="1290">Pupitre Universitario - L. 1,300</option>
+                        <option value="4800">Silla Ergonómica Operativa - L. 800</option>
+                        <option value="24500">Escritorio Ejecutivo en Caoba - L. 1,500</option>
+                        <option value="39900">Mesa de Directorio en Cedro - L. 2,500</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="destino">Destino y Flete:</label>
+                    <select id="destino" name="destino">
+                        <option value="">Seleccione el destino</option>
+                        <option value="300">Siguatepeque/Comayagua - Flete: L. 300</option>
+                        <option value="1000">Tegucigalpa o SPS - Flete: L. 1,000</option>
+                        <option value="3500">Roatán/Islas de la Bahía - Flete: L. 3,500</option>
+                    </select>
+                </p>
+
+                <p> Descuento institucional del 12% a partir de 10 piezas</p>
+
+                <button type="button">Calcular Presupuesto</button>
+            </form>
+
+
+            
+            <div id="resultado">
+                <h3>Resultado de su Cotización</h3>
+                <p>El costo estimado de su pedido es L. 20,000</p>
+            </div>
+
+
         </section>
 
         <section id="Licitacion">
