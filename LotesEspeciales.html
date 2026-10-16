@@ -4,147 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lotes Especiales - Mueblesig Honduras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-      
+        <p class="barra-superior"><i class="bi bi-telephone-fill"></i> Teléfonos de atención al cliente: 2234-5678 / 2232-4578 | <i class="bi bi-clock-fill"></i> Horarios de nuestro taller: Lunes a Viernes 9am - 5pm</p>
 
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Catalogo.html">Catálogo</a></li>
-                <li><a href="LotesEspeciales.html">Lotes Especiales</a></li>
-                <li><a href="Licitaciones.html">Licitaciones</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-
-            <a href="https://wa.me/50422345678">Cotizar Lote por WhatsApp</a>
+        <nav class="navbar navbar-expand-lg menu-principal">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.jfif" alt="Logo de Mueblesig Honduras" width="45" height="45"> Mueblesig Honduras</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="LotesEspeciales.html">Lotes Especiales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Licitaciones.html">Licitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </ul>
+                <a href="https://wa.me/50422345678" class="btn btn-whatsapp ms-lg-3"><i class="bi bi-whatsapp"></i> Cotizar Lote por WhatsApp</a>
+            </div>
         </nav>
 
-        <h1>Lotes Especiales y Liquidación</h1>
-        <p>Precios especiales por volumen para oficinas, universidades y hoteles. Unidades limitadas.</p>
+        <h1 class="titulo-pagina">Lotes Especiales y Liquidación</h1>
+        <p class="subtitulo-pagina">Precios especiales por volumen para oficinas, universidades y hoteles. Unidades limitadas.</p>
     </header>
 
-    <main>
-        <section id="Lotes">
-            <h2>Descuentos por Lote</h2>
+    <main class="container py-5">
+        <section id="Lotes" class="grid-productos">
+            <h2 class="titulo-seccion">Descuentos por Lote</h2>
 
-
-
-            
-            <article id="lote-01">
-                <span>DESCUENTO POR LOTE</span>
+            <article id="lote-01" class="card tarjeta">
+                <span class="badge badge-lote badge-descuento">DESCUENTO POR LOTE</span>
                 <h3>Pupitre Universitario</h3>
                 <figure>
                     <img src="img/pupitre.jfif" alt="Pupitre Universitario" width="200" height="200">
                     <figcaption>Lote mínimo de 25 unidades</figcaption>
                 </figure>
-                <p>Categoría: Aulas Universitarias</p>
-                <p>Precio Regular: <del>L. 1,300.00</del></p>
-                <p>Precio Especial: <strong>L. 1,090.00</strong></p>
-                <p>Detalles técnicos: Estructura de metal y tablero de madera contrachapada, Dimensiones: 0.70m x 0.60m x 0.75m, Acabado antidesgaste, Garantía de 4 meses.</p>
+                <p class="categoria">Categoría: Aulas Universitarias</p>
+                <p class="precio-regular">Precio Regular: <del>L. 1,300.00</del></p>
+                <p class="precio-especial">Precio Especial: <strong>L. 1,090.00</strong></p>
+                <p class="detalles">Detalles técnicos: Estructura de metal y tablero de madera contrachapada, Dimensiones: 0.70m x 0.60m x 0.75m, Acabado antidesgaste, Garantía de 4 meses.</p>
             </article>
 
-
-
-
-            <article id="lote-02">
-                <span>DESCUENTO POR LOTE</span>
+            <article id="lote-02" class="card tarjeta">
+                <span class="badge badge-lote badge-descuento">DESCUENTO POR LOTE</span>
                 <h3>Silla Operativa Ergonómica</h3>
                 <figure>
                     <img src="img/silla.cedro.jfif" alt="Silla Operativa Ergonómica" width="200" height="200">
                     <figcaption>Lote mínimo de 10 unidades</figcaption>
                 </figure>
-                <p>Categoría: Línea Ejecutiva</p>
-                <p>Precio Regular: <del>L. 800.00</del></p>
-                <p>Precio Especial: <strong>L. 680.00</strong></p>
-                <p>Detalles técnicos: Estructura de cedro y malla reforzada, Dimensiones: 0.60m x 0.60m x 1.10m, Acabado mate, Garantía de 5 meses.</p>
+                <p class="categoria">Categoría: Línea Ejecutiva</p>
+                <p class="precio-regular">Precio Regular: <del>L. 800.00</del></p>
+                <p class="precio-especial">Precio Especial: <strong>L. 680.00</strong></p>
+                <p class="detalles">Detalles técnicos: Estructura de cedro y malla reforzada, Dimensiones: 0.60m x 0.60m x 1.10m, Acabado mate, Garantía de 5 meses.</p>
             </article>
 
-
-            <article id="lote-03">
-                <span>DESCUENTO POR LOTE</span>
+            <article id="lote-03" class="card tarjeta">
+                <span class="badge badge-lote badge-descuento">DESCUENTO POR LOTE</span>
                 <h3>Estantería en Pino Oocarpa</h3>
                 <figure>
                     <img src="img/estanteria.jfif" alt="Estantería en Pino Oocarpa" width="200" height="200">
                     <figcaption>Lote mínimo de 8 unidades</figcaption>
                 </figure>
-                <p>Categoría: Archivo</p>
-                <p>Precio Regular: <del>L. 2,200.00</del></p>
-                <p>Precio Especial: <strong>L. 1,850.00</strong></p>
-                <p>Detalles técnicos: Madera de Pino Oocarpa, Dimensiones: 1.00m x 0.40m x 2.00m, Acabado sellador transparente, Garantía de 6 meses.</p>
+                <p class="categoria">Categoría: Archivo</p>
+                <p class="precio-regular">Precio Regular: <del>L. 2,200.00</del></p>
+                <p class="precio-especial">Precio Especial: <strong>L. 1,850.00</strong></p>
+                <p class="detalles">Detalles técnicos: Madera de Pino Oocarpa, Dimensiones: 1.00m x 0.40m x 2.00m, Acabado sellador transparente, Garantía de 6 meses.</p>
             </article>
-
-
         </section>
 
-        <section id="Liquidacion">
-            <h2>Ofertas de Liquidación</h2>
+        <section id="Liquidacion" class="grid-productos mt-5">
+            <h2 class="titulo-seccion">Ofertas de Liquidación</h2>
 
-            
-            <article id="oferta-01">
-                <span>OFERTA</span>
+            <article id="oferta-01" class="card tarjeta">
+                <span class="badge badge-lote badge-oferta">OFERTA</span>
                 <h3>Cama King Size Hotelera</h3>
                 <figure>
                     <img src="img/base.jfif" alt="Cama King Size Hotelera" width="200" height="200">
                     <figcaption>Liquidación de inventario</figcaption>
                 </figure>
-                <p>Categoría: Hotelería</p>
-                <p>Precio Regular: <del>L. 3,000.00</del></p>
-                <p>Precio Especial: <strong>L. 2,490.00</strong></p>
-                <p>Detalles técnicos: Madera de Pino tratado, Dimensiones: 2.00m x 2.00m x 0.40m, Acabado natural, Garantía de 8 meses.</p>
+                <p class="categoria">Categoría: Hotelería</p>
+                <p class="precio-regular">Precio Regular: <del>L. 3,000.00</del></p>
+                <p class="precio-especial">Precio Especial: <strong>L. 2,490.00</strong></p>
+                <p class="detalles">Detalles técnicos: Madera de Pino tratado, Dimensiones: 2.00m x 2.00m x 0.40m, Acabado natural, Garantía de 8 meses.</p>
             </article>
 
-
-
-
-
-            <article id="oferta-02">
-                <span>OFERTA</span>
+            <article id="oferta-02" class="card tarjeta">
+                <span class="badge badge-lote badge-oferta">OFERTA</span>
                 <h3>Buró o Mesita de Noche Hotelera</h3>
                 <figure>
                     <img src="img/buro.jfif" alt="Buró Hotelero" width="200" height="200">
                     <figcaption>Liquidación de inventario</figcaption>
                 </figure>
-                <p>Categoría: Hotelería</p>
-                <p>Precio Regular: <del>L. 1,100.00</del></p>
-                <p>Precio Especial: <strong>L. 890.00</strong></p>
-                <p>Detalles técnicos: Madera de Cedro, Dimensiones: 0.50m x 0.45m x 0.60m, Acabado sellado, Garantía de 4 meses.</p>
+                <p class="categoria">Categoría: Hotelería</p>
+                <p class="precio-regular">Precio Regular: <del>L. 1,100.00</del></p>
+                <p class="precio-especial">Precio Especial: <strong>L. 890.00</strong></p>
+                <p class="detalles">Detalles técnicos: Madera de Cedro, Dimensiones: 0.50m x 0.45m x 0.60m, Acabado sellado, Garantía de 4 meses.</p>
             </article>
 
-
-
-
-
-            <article id="oferta-03">
-                <span>OFERTA</span>
+            <article id="oferta-03" class="card tarjeta">
+                <span class="badge badge-lote badge-oferta">OFERTA</span>
                 <h3>Mesa Colectiva para Biblioteca</h3>
                 <figure>
                     <img src="img/mesaamplia.jfif" alt="Mesa Colectiva para Biblioteca" width="200" height="200">
                     <figcaption>Liquidación de inventario</figcaption>
                 </figure>
-                <p>Categoría: Aulas Universitarias</p>
-                <p>Precio Regular: <del>L. 4,800.00</del></p>
-                <p>Precio Especial: <strong>L. 3,990.00</strong></p>
-                <p>Detalles técnicos: Madera de Pino Oocarpa, Dimensiones: 2.00m x 1.00m x 0.75m, Acabado mate protector, Garantía de 6 meses.</p>
+                <p class="categoria">Categoría: Aulas Universitarias</p>
+                <p class="precio-regular">Precio Regular: <del>L. 4,800.00</del></p>
+                <p class="precio-especial">Precio Especial: <strong>L. 3,990.00</strong></p>
+                <p class="detalles">Detalles técnicos: Madera de Pino Oocarpa, Dimensiones: 2.00m x 1.00m x 0.75m, Acabado mate protector, Garantía de 6 meses.</p>
             </article>
-
-
-
-
         </section>
-        
     </main>
 
-    <footer>
-        <p>Km 114 Carretera CA-5, Siguatepeque, Comayagua - Tel: 2234-5678</p>
-        <p>Blvrd. Morazán, Tegucigalpa - Tel: 2232-4578</p>
-        <a href="https://facebook.com">Facebook</a>
-        <br>
-        <a href="https://instagram.com">Instagram</a>
+    <footer class="pie-pagina">
+        <p><i class="bi bi-geo-alt-fill"></i> Km 114 Carretera CA-5, Siguatepeque, Comayagua - Tel: 2234-5678</p>
+        <p><i class="bi bi-shop"></i> Blvrd. Morazán, Tegucigalpa - Tel: 2232-4578</p>
+        <a href="https://facebook.com" class="red-social" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com" class="red-social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
         <br>
         <a href="index.html">Regresar al Inicio</a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
