@@ -4,49 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mueblesig Honduras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <p>Teléfonos de atención al cliente: 2234-5678 / 2232-4578 / 2212-568 --- Horarios de nuestro taller: Lunes a Viernes 9am - 5pm</p>
+        <p class="barra-superior"><i class="bi bi-telephone-fill"></i> Teléfonos de atención al cliente: 2234-5678 / 2232-4578 | <i class="bi bi-clock-fill"></i> Horarios de nuestro taller: Lunes a Viernes 9am - 5pm</p>
 
-        <h1>Mueblesig Honduras</h1>
-        
-        <figure>
-            <img src="img/logo.jpg" alt="Imagen del logo de nuestra Fábrica de muebles" width="200" height="200">
+        <nav class="navbar navbar-expand-lg menu-principal">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.jfif" alt="Logo de Mueblesig Honduras" width="45" height="45"> Mueblesig Honduras</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="LotesEspeciales.html">Lotes Especiales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Licitaciones.html">Licitaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+                </ul>
+                <a href="https://wa.me/50422345678" class="btn btn-whatsapp ms-lg-3"><i class="bi bi-whatsapp"></i> Cotizar Lote por WhatsApp</a>
+            </div>
+        </nav>
+
+        <figure class="logo-portada">
+            <img src="img/logo.jfif" alt="Imagen del logo de nuestra Fábrica de muebles" width="200" height="200">
         </figure>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Catalogo.html">Catálogo</a></li>
-                <li><a href="LotesEspeciales.html">Lotes Especiales</a></li>
-                <li><a href="Licitaciones.html">Licitaciones</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-            
-            <button type="button">Cotizar Lote por WhatsApp</button>
-        </nav>
+        <h1 class="titulo-pagina portada">Mueblesig Honduras</h1>
     </header>
 
-    <main>
-        <section>
-            <h2>Quiénes Somos</h2>
+    <main class="container py-5 grid-dos">
+        <section class="caja-blanca p-4">
+            <h2 class="titulo-seccion">Quiénes Somos</h2>
             <p>Somos una prestigiosa fábrica de muebles y carpintería industrial ubicada en la Carretera CA-5 en Siguatepeque, Comayagua.</p>
             <p>Nos especializamos en ofrecer una plataforma digital y un catálogo mayorista con respuesta inmediata para clientes corporativos, universidades y complejos hoteleros en Tegucigalpa, San Pedro Sula y Roatán.</p>
         </section>
 
-        <section>
-            <h2>Nuestro Taller</h2>
+        <section class="caja-blanca p-4">
+            <h2 class="titulo-seccion">Nuestro Taller</h2>
             <p>En nuestro taller fabricamos mobiliario de madera y carpintería industrial de la más alta calidad, garantizando acabados de primera, disponibilidad inmediata y atención personalizada para proyectos de gran escala en toda la ruta CA-5 y a nivel nacional.</p>
         </section>
     </main>
 
-    <footer>
-        <p>Km 114 Carretera CA-5, Siguatepeque, Comayagua - Tel: 2234-5678</p>
-        <p>Blvrd. Morazán, Tegucigalpa - Tel: 2232-4578</p>
-        <a href="https://facebook.com">Facebook</a>
-        <br>
-        <a href="https://instagram.com">Instagram</a>
+    <footer class="pie-pagina">
+        <p><i class="bi bi-geo-alt-fill"></i> Km 114 Carretera CA-5, Siguatepeque, Comayagua - Tel: 2234-5678</p>
+        <p><i class="bi bi-shop"></i> Blvrd. Morazán, Tegucigalpa - Tel: 2232-4578</p>
+        <a href="https://facebook.com" class="red-social" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com" class="red-social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
