@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mueblesig Honduras</title>
+</head>
+<body>
+    <header>
+        <p>Teléfonos de atención al cliente: 2234-5678 / 2232-4578 --- Horarios de nuestro taller: Lunes a Viernes 9am - 5pm</p>
+
+        <figure>
+            <img src="img/logo.jfif" alt="Logo de Mueblesig Honduras" width="100" height="100">
+        </figure>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Catalogo.html">Catálogo</a></li>
+                <li><a href="LotesEspeciales.html">Lotes Especiales</a></li>
+                <li><a href="Licitaciones.html">Licitaciones</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+
+            <a href="https://wa.me/50422345678">Cotizar Lote por WhatsApp</a>
+        </nav>
+
+        <h1>Contáctenos</h1>
+        <p>Estamos para atender a su empresa, universidad u hotel. Visítenos o escríbanos.</p>
+    </header>
+
+    <main>
+        <section id="Ubicaciones">
+            <h2>Nuestras Ubicaciones</h2>
+
+            <article>
+                <h3>Fábrica y Taller - Siguatepeque</h3>
+                <p>Dirección: Km 114 Carretera CA-5, Siguatepeque, Comayagua</p>
+                <p>Teléfono: 2234-5678</p>
+                <p>Horario: Lunes a Viernes 9am - 5pm</p>
+            </article>
+
+            <article>
+                <h3>Sala de Ventas - Tegucigalpa</h3>
+                <p>Dirección: Blvrd. Morazán, Tegucigalpa, Francisco Morazán</p>
+                <p>Teléfono: 2232-4578</p>
+                <p>Horario: Lunes a Sábado 9am - 5pm</p>
+            </article>
+        </section>
+
+        <section id="OtrosMedios">
+            <h2>Otros Medios de Contacto</h2>
+            <p>Correo electrónico: <a href="ventas@mueblesig.hn">ventas@mueblesig.hn</a></p>
+            <p>WhatsApp: <a href="https://wa.me/50422345678">Escríbanos por WhatsApp</a></p>
+        </section>
+
+        <section id="Mensaje">
+            <h2>Envíenos un Mensaje</h2>
+            <form action="https://mueblesig.hn/api/Contacto" method="POST" enctype="multipart/form-data">
+                <p>
+                    <label for="nombreContacto">Nombre Completo:</label>
+                    <input type="text" id="nombreContacto" name="nombre" required>
+                </p>
+
+                <p>
+                    <label for="correoContacto">Correo Electrónico:</label>
+                    <input type="email" id="correoContacto" name="correo" placeholder="ejemplo@correo.com" required>
+                </p>
+
+                <p>
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Seleccione un asunto</option>
+                        <option value="informacion">Información de productos</option>
+                        <option value="pedido">Estado de un pedido</option>
+                        <option value="garantia">Garantía</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje:</label>
+                    <br>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar Mensaje</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Km 114 Carretera CA-5, Siguatepeque, Comayagua - Tel: 2234-5678</p>
+        <p>Blvrd. Morazán, Tegucigalpa - Tel: 2232-4578</p>
+        <a href="https://facebook.com">Facebook</a>
+        <br>
+        <a href="https://instagram.com">Instagram</a>
+        <br>
+        <a href="index.html">Regresar al Inicio</a>
+    </footer>
+</body>
+</html>
